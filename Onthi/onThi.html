@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" onsubmit="return validateForm(event);">
+      Họ tên : <input type="text" id="name" /> <br />
+      <div id="err-name" style="color: red"></div>
+      Tuổi : <input type="text" id="tuoi" /><br />
+      <div id="err-tuoi" style="color: red"></div>
+      Email : <input type="text" id="email" /> <br />
+      <div id="err-email" style="color: red"></div>
+      <input type="submit" name="" id="" value="Đăng ký" />
+    </form>
+    <h1>Thông tin mua hàng</h1>
+    Chọn loại hàng:
+    <select name="" id="item" onchange="tinhTien()">
+      <option value="14000000">Iphone 14</option>
+      <option value="20000000">Iphone 15</option>
+      <option value="25000000">Iphone 16</option>
+    </select>
+
+    <br />
+    <input
+      type="checkbox"
+      oninput="tinhTien()"
+      value="2600000"
+      id="taiNghe"
+      name="phuKien"
+    />Bao gồm tai nghe <br />
+    <input
+      type="checkbox"
+      oninput="tinhTien()"
+      value="1000000"
+      id="baoHanh"
+      name="phuKien"
+      checked
+    />Bao gồm bảo hành <br />
+    <input
+      type="checkbox"
+      oninput="tinhTien()"
+      value="1000000"
+      id="baoHanh"
+      name="phuKien"
+      checked
+    />Bao gồm ốp <br />
+    Số lượng :<input type="number" oninput="tinhTien()" id="soLuong" /> <br />
+    <input type="radio" oninput="tinhTien()" /> Quốc tế
+    <input type="radio" />Trong nước
+    <input type="radio" oninput="tinhTien()" />Nội thành
+    <h1>Tổng tiền</h1>
+    <h1 id="tongTien"></h1>
+
+    <h1>Slider</h1>
+    <img src="./images/1.webp" alt="" id="slider" />
+    <button onclick="next()">Next</button>
+    <button onclick="previous()">Previous</button>
+    <button onclick="stop()">Stop</button>
+    <script src="./onThi.js"></script>
+  </body>
+</html>
